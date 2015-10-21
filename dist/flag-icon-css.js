@@ -5,9 +5,12 @@ angular.module('flag-icon-css', []).directive('flagIconCss', function(){
     restrict: 'E',
     replace: true,
     scope: {
-      width: '=',
-      iso: '='
+      iso: '=',
+      width: '@'
     },
-    template: '<span class="flag-icon flag-icon-{{iso | lowercase}}"></span>'
+    template: '<div class="flag-icon flag-icon-{{iso | lowercase}}" style="width:{{width}}px; height:{{height}}px;"></div>',
+    link: function(scope, element, attrs){
+    	scope.height = scope.width * 3/4;
+    }
   }
 });

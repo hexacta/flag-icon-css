@@ -1,6 +1,9 @@
 {
   "name": "flag-icon-css",
-  "main": "css/flag-icon.min.css",
+  "main": [
+    "css/flag-icon.min.css",
+    "dist/flag-icon-css.js"
+  ],
   "ignore": [
       "**/.*",
       "assets",

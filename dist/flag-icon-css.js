@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('flag-icon-css', []).directive('flag-icon-css', function(){
+angular.module('flag-icon-css', []).directive('flagIconCss', function(){
   return{
     restrict: 'E',
     replace: true,

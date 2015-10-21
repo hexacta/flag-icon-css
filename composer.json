@@ -15,7 +15,8 @@
       "files":[
         "less/**",
         "css/**",
-        "flags/**"
+        "flags/**",
+        "dist/**"
       ]
     }
   }
